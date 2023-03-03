@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+
+	<title>Trading Bot</title>
+</head>
+<body>
+	<header class="header">
+
+		<!-- <div class="header__inner"> -->
+		<div class="container">
+
+			<div class="header__body">
+
+				<a  class="header__logo" href="home.html" ><img src="img/bkpng.png" alt=""></a>
+
+				<div class="header__burger">
+					<span></span>
+				</div>
+
+				<nav class="nav">
+			<a href="trading.html" class="nav__link">Trading Panel</a>
+			<a href="api.html" class="nav__link">Api panel</a>
+			<a href="results.html" class="nav__link">results</a>
+			<a href="settings.html" class="nav__link">settings</a>
+
+
+
+		</nav>
+
+	 
+
+			</div>
+
+	
+	<!-- </div> -->
+  </div>	
+		
+	</header>
+	<main>
+		<container class="trading-area">
+		<div class="left-area">
+
+			<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tv" id="tradingview_13f5b"></div>
+  <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">BTCUSDT chart</span></a> by TradingView</div> -->
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "BINANCE:BTCUSDT",
+  "interval": "60",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "container_id": "tradingview_13f5b"
+}
+  );
+  </script>
+</div>
+
+		</div>
+
+
+			<div class="right-area">
+			<div class="search-container">
+    <form action="">
+      <input class="search" type="text" placeholder="Search Token" name="search">
+      <button class="button-search" type="submit"><img src="img/icons8-search-more-50.png"> </button>
+    </form>
+  </div>
+
+
+  <div class="trading-button">
+  	<button class="tr-btn1">Buy</button>
+    <button class="tr-btn2">Sell</button>
+    </div>
+
+			<!-- <img src="img/trading.png"> -->
+		</div>
+			
+		
+
+	</container>
+	</main>
+	<footer>
+		
+		<a class="footer-ftmo" href="https://trader.ftmo.com/?affiliates=UflBZtckJMvfBLdrdFko"><img src="https://cdn.ftmo.com/affiliate-banner.728x90" alt="FTMO.com - For serious traders"/></a>
+		<p>&copy; 2023 All rights reserved.</p>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
